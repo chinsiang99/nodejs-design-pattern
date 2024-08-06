@@ -31,3 +31,17 @@ The Prototype pattern is a creational design pattern that aims to:
 - Prototype Interface: Defines a method for cloning itself. This method is often called clone or copy.
 - Concrete Prototype: Implements the clone method, allowing for the duplication of itself.
 - Client: Uses the prototype to create new objects by cloning existing ones.
+
+# Factory Pattern
+**Intent**: Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subClasses
+
+## Key Goals of the Factory Method Pattern
+- Encapsulate Object Creation: Decouple the client code from the specific classes it needs to instantiate.
+- Promote Flexibility and Scalability: Allow subclasses to determine which class to instantiate.
+- Encourage Code Reuse: Reduce duplication of object creation logic.
+
+## How the Factory Method Pattern Works
+- Product: Defines the interface of objects the factory method creates.
+- Concrete Product: Implements the Product interface.
+- Creator: Declares the factory method, which returns an object of type Product. The Creator may also define a default implementation of the factory method that returns a default ConcreteProduct object.
+- Concrete Creator: Overrides the factory method to return an instance of a ConcreteProduct.
