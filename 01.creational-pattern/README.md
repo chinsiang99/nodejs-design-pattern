@@ -45,3 +45,18 @@ The Prototype pattern is a creational design pattern that aims to:
 - Concrete Product: Implements the Product interface.
 - Creator: Declares the factory method, which returns an object of type Product. The Creator may also define a default implementation of the factory method that returns a default ConcreteProduct object.
 - Concrete Creator: Overrides the factory method to return an instance of a ConcreteProduct.
+
+# Builder Pattern
+**Intent**: Seperate the construction of a complex object from its representation so that the same construction process can create different representations
+
+## Key Goals of the Builder Pattern
+- Encapsulate Construction: Separate the construction of a complex object from its representation.
+- Flexibility: Allow different representations of an object to be created using the same construction process.
+- Step-by-Step Construction: Build an object step by step, with the option to create an incomplete representation.
+
+## How the Builder Pattern Works
+- Product: The complex object being constructed.
+- Builder Interface: Specifies methods for creating the parts of the Product object.
+- Concrete Builder: Implements the Builder interface and provides specific implementations for building parts of the Product.
+- Director: Constructs an object using the Builder interface. It’s optional but useful for managing the construction process.
+Client: Uses the Director and Builder to construct the Product.
