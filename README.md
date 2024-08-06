@@ -64,3 +64,5 @@ With design patteenrs, developers can:
 - Modifying the prototype on an instance
 - syncing execution after initialization
 - callback chaos (hell)
+
+# For the following documentation, please look at the folders created by sequence
