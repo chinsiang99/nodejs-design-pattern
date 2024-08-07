@@ -15,3 +15,21 @@ The adapter pattern typically involves four components:
 - Target: Defines the domain-specific interface used by the Client.
 - Adapter: Adapts the interface of Adaptee to the Target interface.
 - Adaptee: Defines an existing interface that needs adapting.
+
+# Proxy Pattern
+
+**Intent**: Provide a surrogate or placholder for another object to control access to it
+
+## Key Concepts
+- Proxy: The class that controls access to the real subject. It implements the same interface as the real subject and forwards requests to it.
+- Subject: The common interface that both the real subject and the proxy implement.
+- Real Subject: The actual object that the proxy represents and controls access to.
+- Client: The object that interacts with the proxy instead of the real subject.
+
+## Structure
+The proxy pattern typically involves four components:
+
+Client: Uses the Subject interface.
+Subject: Defines the common interface for RealSubject and Proxy.
+RealSubject: The actual object that the proxy represents.
+Proxy: Controls access to the RealSubject.
