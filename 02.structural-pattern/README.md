@@ -33,3 +33,22 @@ Client: Uses the Subject interface.
 Subject: Defines the common interface for RealSubject and Proxy.
 RealSubject: The actual object that the proxy represents.
 Proxy: Controls access to the RealSubject.
+
+# Composite Pattern
+
+**Intent**: Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly
+
+The composite pattern is a structural design pattern that allows you to compose objects into tree structures to represent part-whole hierarchies. This pattern lets clients treat individual objects and compositions of objects uniformly.
+
+## Key Concepts
+- Component: The interface or abstract class that defines common operations for both simple and complex objects in the composition.
+- Leaf: Represents a single object in the composition. It implements the Component interface and defines behavior for the base objects.
+- Composite: Represents a group of objects (leaves or other composites). It implements the Component interface and defines behavior for operations that can be applied to child components.
+
+## Structure
+The composite pattern typically involves the following components:
+
+- Component: An interface or abstract class declaring operations for both simple and complex objects.
+- Leaf: A concrete class implementing the Component interface, representing single objects in the composition.
+- Composite: A concrete class implementing the Component interface, representing groups of objects. It stores child components and implements child-related operations.
+- Client: The object that manipulates the components through the Component interface.
