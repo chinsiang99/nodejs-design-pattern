@@ -52,3 +52,21 @@ The composite pattern typically involves the following components:
 - Leaf: A concrete class implementing the Component interface, representing single objects in the composition.
 - Composite: A concrete class implementing the Component interface, representing groups of objects. It stores child components and implements child-related operations.
 - Client: The object that manipulates the components through the Component interface.
+
+# Decorator Pattern
+
+**Intent**: Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality
+
+## Key Concepts
+Component: The interface or abstract class that defines the common operations for both concrete components and decorators.
+Concrete Component: The class that implements the Component interface and defines the base behavior.
+Decorator: An abstract class that implements the Component interface and contains a reference to a Component object. It delegates all operations to the wrapped component.
+Concrete Decorators: Classes that extend the Decorator class and add new behavior before or after delegating to the wrapped component.
+
+## Structure
+The decorator pattern typically involves the following components:
+
+Component: An interface or abstract class declaring operations.
+Concrete Component: A concrete class implementing the Component interface.
+Decorator: An abstract class implementing the Component interface, containing a reference to a Component object.
+Concrete Decorators: Concrete classes extending the Decorator class and adding additional behavior.
